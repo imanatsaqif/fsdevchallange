@@ -14,23 +14,6 @@ Proyek ini dikembangkan menggunakan **Core PHP**, **MySQL**, dan **Bootstrap 5**
 
 ---
 
-## Project Structure
-
-fsdevchallange/
-├── assets/ # Berisi file CSS dan resource tambahan
-├── pdfs/ # Folder penyimpanan file PDF
-├── config.php # Koneksi database dan konfigurasi global
-├── register.php # Halaman registrasi pengguna
-├── login.php # Halaman login pengguna
-├── dashboard.php # Halaman utama daftar eBook
-├── view_pdf.php # Halaman viewer PDF dengan pembatasan akses
-├── delete_ebook.php # Fungsi untuk menghapus data eBook
-├── logout.php # Fungsi untuk logout dan menghapus session
-└── fsdev_db.sql # File database dump
-
-
----
-
 ## Fitur Utama
 
 1. **User Authentication**
