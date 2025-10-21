@@ -1,0 +1,210 @@
+:root {
+  --dark: #1B3C53;
+  --mid: #234C6A;
+  --soft: #456882;
+  --light: #D2C1B6;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--light);
+  color: #222;
+}
+
+/* === AUTH PAGE (Login & Register) === */
+* {
+  box-sizing: border-box;
+}
+
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: white;
+  padding: 30px 28px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  width: 350px;
+}
+
+.card h2 {
+  text-align: center;
+  color: var(--dark);
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--mid);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input:focus {
+  border-color: var(--soft);
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 18px;
+  background: var(--soft);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: var(--mid);
+}
+
+p {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 13px;
+}
+
+.alert {
+  background: #ffefef;
+  color: #c33;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* === DASHBOARD PAGE === */
+header {
+  background: var(--dark);
+  color: white;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  gap: 14px; /* jarak antar elemen kanan */
+  font-size: 14px;
+}
+
+/* username text */
+header span {
+  color: var(--light);
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+th {
+  background: var(--mid);
+  color: white;
+  font-weight: 500;
+}
+
+tr:hover td {
+  background: #f9f9f9;
+}
+
+/* Tombol lihat dan hapus */
+.table-action {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  color: white;
+  transition: background 0.3s;
+}
+
+.btn-view {
+  background: var(--soft);
+}
+
+.btn-view:hover {
+  background: var(--mid);
+}
+
+.btn-del {
+  background: #c14949;
+}
+
+.btn-del:hover {
+  background: #a83838;
+}
+
+/* PDF viewer box */
+#pdfbox {
+  position: relative;
+  margin-top: 25px;
+}
+
+iframe {
+  border: none;
+  width: 100%;
+  height: 600px;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  background: rgba(27, 60, 83, 0.8);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  pointer-events: none;
+}
